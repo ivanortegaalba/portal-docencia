@@ -1,6 +1,6 @@
 bash backup-personal/copia_seguridad_drupal.sh
 git add -A
-if $1
+if $1 !=""
     then
     git commit -m "$1"
 else
