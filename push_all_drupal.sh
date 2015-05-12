@@ -1,4 +1,7 @@
-bash backup-personal/copia_seguridad_drupal.sh
+
+cd backup-personal
+bash copia_seguridad_drupal.sh
+cd ..
 git add -A
 if $1 !=""
     then
