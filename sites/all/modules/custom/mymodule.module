@@ -1,0 +1,25 @@
+<?php
+
+function mymodule_menu(){
+  $items['my/url'] = array[
+    'title' => 'this is my url',
+    'page_callback' => 'mymodule_page_callback',
+    'access_callback' => 'user_access',
+    'access_arguments' => array['access_content'],
+    'type' => MENU_CALLBACK
+  ];
+  return $items;
+} 
+
+function mymodule_page_callback(){
+  return ' ';
+}
+
+function mymodule_theme(){
+  return array[
+    'mymodule_node_title' => array[
+      'template' => 'mymodule--node-title',
+      'path' => drupal_get_path['module'].'templates'
+      ]
+    ]
+}

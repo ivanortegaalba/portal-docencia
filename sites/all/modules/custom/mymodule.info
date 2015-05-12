@@ -1,0 +1,5 @@
+name = mymodule
+description = This is my custom module
+core = 7.x
+package = Taller Drupal
+version = 7.x-1.x
